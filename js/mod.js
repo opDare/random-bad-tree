@@ -4,8 +4,7 @@ let modInfo = {
 	author: "op_Dare",
 	pointsName: "atoms",
 	modFiles: ["tree.js", "layers/functions.js",
-	"layers/layersMain.js", "layers/layersSide.js", "layers/layersDoc.js", 
-	"layers/layersDev.js", "layers/layersMinetest.js"
+	"layers/layersMain.js", "layers/layersSide.js", "layers/layersDoc.js"
 	],
 
 	discordName: "Trees, The DC server",
