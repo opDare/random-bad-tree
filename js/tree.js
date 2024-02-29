@@ -48,7 +48,7 @@ addLayer("tree-tab", {
             onClick() {if(canReset('k')) doReset('k')},
             onHold() {if(canReset('k')) doReset('k')},
             canClick() {return true},
-	        unlocked() {return tmp.k.layerShown}
+	    unlocked() {return tmp.k.layerShown},
             style() {return {
                 'background-color': tmp.k.color
             }}
@@ -62,7 +62,7 @@ addLayer("tree-tab", {
             onClick() {if(canReset('p')) doReset('p')},
             onHold() {if(canReset('p')) doReset('p')},
             canClick() {return true},
-			unlocked() {return tmp.p.layerShown}
+	    unlocked() {return tmp.p.layerShown},
             style() {return {
                 'background-color': tmp.p.color
             }}
