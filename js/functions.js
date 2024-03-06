@@ -11,11 +11,6 @@ var seven = new Decimal(7)
 var eight = new Decimal(8)
 var nine = new Decimal(9)
 var ten = new Decimal(10)
-function nPr(n,r){ // 3P3 == 1 ,not 3P1!
-    t = 1;r = n - r;
-    for(;n>r;n--)t*=n;
-    return t==0 ? 0:t
-}
 
 
 
@@ -68,7 +63,7 @@ function countEndgame() {
 //others
 function isMobile() {
     let check = true
-    if (typeof screen.orientation !== 'undefined') check = false
+    if (typeof screen.orientation !== undefined) check = false
     return check
 }
 
