@@ -487,9 +487,9 @@ addLayer("k", {
     },
     exponent() {
         let exp = 3;
-        if (inChallenge('k', 13)) exp = 1e308; //inf lol
-        if (hasUpgrade('h', 43) && player.k.best.gte(4)) {exp = 3} else if (player.k.points == 3) {exp = 1e308} else {exp = exp}
+        if (hasUpgrade('h', 43) && player.k.best.gte(4)) {exp = 3} else if (player.k.points.eq(3) && !hasUpgrade('h', 43)) {exp = 1e308} else {exp = exp}
         if (!hasUpgrade('h', 61)) {} else if (hasUpgrade('h', 64)) {} else {exp = 1e308}
+	if (inChallenge('k', 13)) exp = 1e308; //inf lol
         return exp
     },
     layerShown() {
