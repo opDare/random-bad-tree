@@ -1045,7 +1045,7 @@ addLayer("e", {
     tabFormat: [
         "main-display",
         ["display-text", function() {return "For some reason, Generators not produce energy, not powers (Hold shift to show sub layer in tree tab)"}],
-		["display-text", fuunction() {return "This layer is not done yet"}],
+	["display-text", function() {return "This layer is not done yet"}],
         ["display-text", function() {return "You are getting "+format(tmp.e.gainMult)+ " Energy per second"}],
         ["display-text", function() {return "Your Powers has boost of ×<em>"+format(tmp.e.energyMult)+"</em>"}],
         "blank",
